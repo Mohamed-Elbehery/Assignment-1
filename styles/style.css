@@ -1,0 +1,107 @@
+/*! General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: url('../assets/deer.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.clear {
+  clear: both;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*! Specific Styles */
+  /* Start of Header Styles */
+  header {
+    background-color: transparent;
+    padding: 0.8rem;
+  }
+
+  header .logo a {
+    color: rgb(179,64,131);
+    float: left;
+  }
+
+  header nav {
+    float: right;
+  }
+
+  header nav ul li {
+    float: left;
+    list-style: none;
+    padding: 0 1.2rem;
+    margin-top: 10px;
+  }
+
+  header nav ul li a {
+    color: white;
+  }
+  /* End of Header Styles */
+
+  /* Start of Landing Styles */
+  .landing {
+    margin-top: 2rem;
+  }
+
+  .landing .cards {
+    margin-left: 6.5rem;
+  }
+
+  .landing .cards .card {
+    width: 290px;
+    background-color: #333;
+    margin-right: 15px;
+    color: white;
+    padding: 2.5rem 2rem;
+    border-radius: 10px;
+    margin-top: 15px;
+    float: left;
+  }
+
+  .landing .cards .card .card-content p {
+    color: #999;
+    margin-top: 0.5rem;
+  }
+
+  .landing .cards .card .card-img {
+    text-align: center;
+  }
+
+  .landing .cards .card .card-img img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 0.5rem;
+  }
+  /* End of Landing Styles */
+/*! Responsive Design */
+  /* Start of Media Queries */
+  @media (min-width: 1920px) {
+    .landing .cards .card {
+      width: 420px;
+      padding: 2rem;
+    }
+
+    .landing .cards .card .card-content p {
+      margin-top: 0.5rem;
+    }
+    
+    .landing .cards .card .card-content h3 {
+      margin-top: 0.5rem;
+    }
+  }
+  /* End of Media Queries */
